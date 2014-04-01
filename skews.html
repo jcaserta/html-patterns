@@ -1,0 +1,62 @@
+
+<html>
+
+	<head> 
+		<title>Skews</title>
+		<style>
+			body { margin: 0pc; padding:0; background: rgb(255,187,69);}
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			.container div:nth-child(4n) { 
+				margin-left: -18pt;
+ 				-webkit-transform: rotate(-200deg) skew(104deg,-50deg); /* Chrome, Safari, Opera */
+			}
+			.container { position: absolute; top: -12pc; left: -12pc; width: 198pc;  border: 0;  overflow: hidden;  z-index: 2; } /* 13.5 inches */
+
+			.container2 { position: absolute; top: -12pc; left: -12pc; width: 198pc;  border: 0;  overflow: hidden; z-index: 4; } /* 13.5 inches */
+
+			.container div  { 
+				width: 72pt; height: 72pt;
+				border-left: 9pt solid rgb(29, 36, 112);
+				border-top: 12pt solid rgba(165, 38, 139, 0.65);
+				margin-top: -6pt;
+				float: left; 
+				-webkit-transform: rotate(-20deg) skew(104deg,-50deg); /* Chrome, Safari, Opera */
+			}
+			
+			.container2 div  { 
+				width: 72pt; height: 72pt;
+				border-left: 24pt solid rgba(241, 8, 64, 0.5);
+				border-top: 18pt solid rgba(16, 57, 165, 0.5);
+				margin-top: -6pt;
+				float: left; 
+				-webkit-transform: rotate(40deg) skew(104deg,-50deg); /* Chrome, Safari, Opera */
+			}
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do { document.write("<div></div>"); i++;  }
+				while (i<1850) 
+  			</script>
+		</div>
+		<div class="container2">
+			<script>
+				i=0;
+				do { document.write("<div></div>"); i++;  }
+				while (i<1850) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

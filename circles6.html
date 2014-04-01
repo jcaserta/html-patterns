@@ -1,0 +1,78 @@
+
+<html>
+
+	<head> 
+		<title>Circles</title>
+		<style>
+			body { margin: 0pc; padding:0; }
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			.container2 div:nth-child(2n) { 
+				-webkit-transform: rotate(0deg);
+			}
+			.container2 div:nth-child(3n) { 
+				-webkit-transform: rotate(20deg);
+			}
+			.container2 div:nth-child(4n) { 
+				-webkit-transform: rotate(160deg);
+			}
+			.container2 div:nth-child(5n) { 
+				-webkit-transform: rotate(230deg);
+			}
+			.container2 div:nth-child(6n) { 
+				-webkit-transform: rotate(230deg);
+			}
+			.container { position: absolute; top: 0; left: 0; width: 198pc;  border: 0;  overflow: hidden;  } /* 13.5 inches */
+
+			.container2 { position: absolute; top: 0; left: 0; z-index: 4; width: 198pc;  border: 0;  overflow: hidden;  } /* 13.5 inches */
+			.container div  { 
+				margin: -12pt;
+				border: 24pt solid rgb(27, 14, 20);
+				opacity: .5;
+				border-radius: 50%;
+				width: 34pt; height: 34pt;
+				float: left; 
+			}
+			.container2 div  { 
+				margin: -12pt;
+				border: 24pt dashed white;
+				opacity: .75;
+				border-radius: 50%;
+				width: 34pt; height: 34pt;
+				float: left; 
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<2850) 
+  			</script>
+		</div>
+		<div class="container2">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<2850) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

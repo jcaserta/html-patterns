@@ -1,0 +1,44 @@
+
+<html>
+
+	<head> 
+		<title>Template</title>
+		<style>
+			body { margin: 0pc; padding:0; }
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			body>div div:nth-child(3n) { 
+				margin-left: 19pt;
+ 			}
+			.container { width: 68pc; height: 126pc; border: 0;  overflow: hidden;  } /* 13.5 inches */
+
+			body div  { 
+				font-size: 442pt;
+				margin: -22pt;
+				float: left; 
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div>abcdefghijklmnopqurstuvwxyz</div>");
+				  i++;
+				  }
+				while (i<650) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

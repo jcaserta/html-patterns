@@ -1,0 +1,72 @@
+
+<html>
+
+	<head> 
+		<title>Circles</title>
+		<style>
+			body { margin: 0pc; padding:0; }
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			.container div:nth-child(2n) { 
+				width: 6pt; height: 6pt;
+			}
+			.container, .container2 {
+			position: absolute; top: 0; left:0;
+							opacity: .8;
+
+ 			width: 204pc;  border: 0;  overflow: hidden;  } /* 13.5 inches */
+
+  			.container { top: 9pt; 
+ 				-webkit-transform: rotate(3deg);}
+			.container2 { top: 9pt; 
+ 				-webkit-transform: rotate(-3deg);}
+			.container div  { 
+				margin: -11pt;
+				border: 25pt solid rgba(43, 58, 17, 1);
+				border-radius: 50%;
+				width: 20pt; height: 20pt;
+				float: left; 
+			}
+			.container2 div  { 
+				margin: -11pt;
+				border: 35pt solid rgb(42, 107, 138);
+				border-radius: 50%;
+				-webkit-transform: rotate(94deg);
+				width: 12pt; height: 12pt;
+				float: left; 
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container2">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<2850) 
+  			</script>
+		</div>
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<4850) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

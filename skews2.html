@@ -1,0 +1,50 @@
+
+<html>
+
+	<head> 
+		<title>Skews</title>
+		<style>
+			body { margin: 0pc; padding:0; 
+
+
+			}
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			.container div:nth-child(5n) { 
+				margin-left: -18pt;
+				-webkit-transform:  skew(104deg,130deg); /* Chrome, Safari, Opera */
+ 			}
+			.container { position: absolute; top: -12pc; left: -12pc; width: 202pc;  border: 0;  overflow: hidden;  z-index: 2; 
+				} /* 13.5 inches */
+
+
+			.container div  { 
+				width: 56pt; height: 72pt;
+				border: 25pt solid rgba(8, 19, 78, 0.75);
+				border-bottom: 4pt solid transparent;
+				margin-top: -6pt;
+				float: left; 
+				-webkit-transform: rotate(-20deg) skew(208deg,-50deg); /* Chrome, Safari, Opera */
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do { document.write("<div></div>"); i++;  }
+				while (i<1850) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

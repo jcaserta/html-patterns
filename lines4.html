@@ -1,0 +1,61 @@
+
+<html>
+
+	<head> 
+		<title>Lines</title>
+		<style>
+			body { margin: 0pc; padding:0; }
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				font-family: helvetica;
+				font-size: 200pt;
+				color: rgba(41, 35, 179, 0.27);
+				/*defaults for containers */
+			}
+
+			.container>div:nth-child(2n) { 
+				-webkit-transform: rotate(-298deg);
+			}
+			.container>div:nth-child(3n) { 
+				-webkit-transform: rotate(156deg);
+			}
+			.container>div:nth-child(4n) { 
+				margin: -376pt;
+				-webkit-transform: rotate(-37deg);
+			}
+			.container { width: 198pc;  border: 0;  overflow: hidden;  } /* 13.5 inches */
+
+			.container>div  { 
+				margin: -72pt;
+				width: 440pt; height: 250pt;
+				-webkit-transform: rotate(207deg);
+				float: left; 
+				overflow: hidden;
+			}
+			.container>div div  { 
+				margin: -121pt;
+				width: 10%; height: 100%;
+				-webkit-transform: rotate(-73deg);
+				float: left; 
+			}
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div>a<div>b</div>c<div>d<div>e<div>f</div>g</div>h</div>i<div>j</div>k</div>");
+				  i++;
+				  }
+				while (i<850) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

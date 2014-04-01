@@ -1,0 +1,93 @@
+
+<html>
+	<head> 
+		<title>Pattern</title>
+		<style>
+			body {  overflow-x: hidden; background: rgba(21,22,13,.04);}
+			.container, .container2, .container3, .container4 { 
+				position: absolute;
+				top: -100px; left: -100px;
+				width: 140%; height: 140%;
+				overflow: hidden;
+				background: none;
+				width: 231pc;
+			}
+
+			.container div, .container2 div, .container3 div, .container4 div { 
+				float: left;
+				width: 0; height: 25px;
+				margin: -10px;
+				padding: 50px;
+				border: 0; 
+				background: none;
+				border-left: 100px solid transparent;
+				border-right: 100px solid transparent;
+				border-top: 100px solid rgba(255,90,0,.6);
+			}
+			.container div:nth-child(2n+0) {
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				border-right: 100px solid rgba(54,43,111,.6);;
+			}
+			.container2 div:nth-child(3n+0) {
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				border-left: 100px solid rgba(54,43,111,.6);
+				border-top: 100px solid tranparent;
+			}
+			.container3 div:nth-child(2n+0) {
+				-webkit-transform: rotate(90deg);
+				-moz-transform: rotate(90deg);
+				border-bottom: 100px solid rgba(54,43,111,.6);
+			}
+			.container4 div:nth-child(3n+1) {
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				border-bottom: 100px solid rgba(0,143,255,.6);
+			}
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<1850) 
+  			</script>
+		</div>
+		<div class="container2">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<1850) 
+  			</script>
+		</div>
+		<div class="container3">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<1850) 
+  			</script>
+		</div>
+		<div class="container4">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<1850) 
+  			</script>
+		</div>
+	</body>
+</html>

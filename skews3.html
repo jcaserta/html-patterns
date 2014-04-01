@@ -1,0 +1,69 @@
+
+<html>
+
+	<head> 
+		<title>Skews</title>
+		<style>
+			body { margin: 0pc; padding:0; 
+
+
+			}
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			.container div:nth-child(2n) { 
+				margin-left: -18pt;
+				-webkit-transform:  rotate(-45deg); /* Chrome, Safari, Opera */
+ 				background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 255, .2)), to(rgba(0, 255, 0, .2))); /* for webkit browsers */
+			}
+			.container div:nth-child(4n) { 
+				margin-left: -18pt;
+				-webkit-transform:  rotate(-135deg); /* Chrome, Safari, Opera */
+ 				background: -webkit-gradient(linear, left top, left bottom, from(rgba(112, 0, 255, 1)), to(rgba(0, 255, 0, .2))); /* for webkit browsers */
+			}
+			.container div:nth-child(6n) { 
+				margin-left: 18pt;
+				-webkit-transform:  rotate(45deg); /* Chrome, Safari, Opera */
+ 				background: -webkit-gradient(linear, left top, left bottom, from(rgba(112, 0, 255, 1)), to(rgba(0, 255, 0, .2))); /* for webkit browsers */
+			}
+			.container div:nth-child(8n) { 
+				margin-left: -18pt;
+				-webkit-transform:  rotate(45deg); /* Chrome, Safari, Opera */
+ 				background: -webkit-gradient(linear, left top, left bottom, from(rgba(112, 0, 255, 1)), to(rgba(0, 255, 0, .2))); /* for webkit browsers */
+			}
+			.container { position: absolute; top: -12pc; left: -12pc; width: 198pc;  border: 0;  overflow: hidden;  z-index: 2; 
+				} /* 13.5 inches */
+
+
+			.container div  { 
+				width: 48pt; height: 75pt;
+				border: 5pt solid transparent;
+				background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 214, 0, 0.83)), to(rgba(82, 0, 255, 0.47))); /* for webkit browsers */
+
+				opacity: .8;
+				border-bottom: 5pt solid transparent;
+				margin: -8pt;
+				float: left; 
+				-webkit-transform: rotate(-45deg) ; /* Chrome, Safari, Opera */
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do { document.write("<div></div>"); i++;  }
+				while (i<3550) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

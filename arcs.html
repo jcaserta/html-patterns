@@ -1,0 +1,65 @@
+
+<html>
+
+	<head> 
+		<title>Arcs</title>
+		<style>
+			body { margin: 0pc; padding:0; }
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			body>div div:nth-child(3n) { 
+				margin-left: -100pt;
+ 					-webkit-transform: rotate(45deg);
+		}
+			.container { width: 144pc;  border: 0;  overflow: hidden;  position: absolute; z-index: 2;} /* 13.5 inches */
+
+			.container2 { width: 144pc;  border: 0;  overflow: hidden; position: absolute; z-index: 3; } /* 13.5 inches */
+			.container div  { 
+				border-right: 20pt solid rgb(201,15,37);
+				width: 10pt; height: 40pt;
+				margin-right: 4pt;
+				float: left; 
+				background: none;
+			}
+			.container2 div  { 
+				border: 29pt solid blue; opacity: .3;
+				-webkit-transform: rotate(45deg);
+				width: 5pt; height: 25pt;
+				float: left; 
+				background: none;
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<5850) 
+  			</script>
+		</div>
+		<div class="container2">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<5850) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

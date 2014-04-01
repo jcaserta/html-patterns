@@ -1,0 +1,46 @@
+
+<html>
+
+	<head> 
+		<title>Pattern</title>
+		<style>
+			body { 				overflow-x: hidden;
+}
+			/* Overflow, rgba, float/position, classes, recursive */
+			.container { 
+				height: 4000px;
+				width: 100%;
+			}
+
+			.container div { 
+			width: 1px; height: 1800px;
+			margin-left: 2px; float: left; 
+			background: -webkit-gradient(linear, left top, left bottom, from(#0ff), to(#ff0)); /* for webkit browsers */
+				opacity: 1;
+
+			}
+			.container div:nth-child(odd) {
+				-webkit-transform: rotate(45deg);
+			}
+			.container div:nth-child(even) {
+				-webkit-transform: rotate(-27deg);
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<1850) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>
