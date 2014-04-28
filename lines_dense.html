@@ -1,0 +1,66 @@
+ 
+<html>
+
+	<head> 
+		<title>Pattern</title>
+		<style>
+			body { 				
+}
+			/* Overflow, rgba, float/position, classes, recursive */
+			.container, .container2, .container3 { 
+				width: 100%;
+				height: 40pc;
+				margin: 0;
+				position: absolute;
+				top: 0; left:0;
+			}
+
+			.container2 { 
+				-webkit-transform: rotate(90deg); 
+				-moz-transform: rotate90deg; 
+			}
+
+			.container3 { 
+				-webkit-transform: rotate(45deg); 
+				-moz-transform: rotate45deg; 
+				top: -4pc;
+			}
+
+			.container div, .container2 div, .container3 div { 
+			width: 2px; height: 100%;
+			border-left: 1px  solid black; 
+			float: left;
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do { document.write("<div></div>"); i++;  }
+				while (i<550) 
+  			</script>
+		</div>
+		<div class="container2">
+			<script>
+				i=0;
+				do { document.write("<div></div>"); i++;  }
+				while (i<1850) 
+  			</script>
+		</div>
+		<div class="container3">
+			<script>
+				i=0;
+				do { document.write("<div></div>"); i++;  }
+				while (i<550) 
+  			</script>
+		</div>
+
+
+
+	</body>
+
+		<!-- a comment in html -->
+</html>
