@@ -7,34 +7,36 @@
 			/* Overflow, rgba, float/position, classes, recursive */
 
 			body>div {
-				overflow: hidden; margin-bottom: ; padding: 0;
+				overflow: hidden; padding: 0;
 				float: left; 
 				/*defaults for containers */
 			}
 
 			.container div:nth-child(2n) { 
-				width: 6pt; height: 6pt;
+				width: 8pt; height: 8pt;
+				margin-bottom: -56px;
 			}
 			.container, .container2 {
 			position: absolute; top: 0; left:0;
-							opacity: .8;
+							
 
  			width: 204pc;  border: 0;  overflow: hidden;  } /* 13.5 inches */
 
-  			.container { top: 9pt; 
+  			.container { top: 9pt; opacity: .8;
  				-webkit-transform: rotate(3deg);}
 			.container2 { top: 9pt; 
  				-webkit-transform: rotate(-3deg);}
 			.container div  { 
 				margin: -11pt;
-				border: 25pt solid rgba(0, 0, 55, 1);
+				border: 25pt solid rgb(0, 0, 55);
 				border-radius: 50%;
-				width: 20pt; height: 20pt;
+				width: 28pt; height: 28pt;
 				float: left; 
+				margin-bottom: -22px;
 			}
 			.container2 div  { 
 				margin: -11pt;
-				border: 35pt solid rgba(22, 0, 20, 1);
+				border: 35pt solid rgb(0, 0, 0);
 				border-radius: 50%;
 				-webkit-transform: rotate(94deg);
 				width: 12pt; height: 12pt;
@@ -62,7 +64,7 @@
 				  document.write("<div></div>");
 				  i++;
 				  }
-				while (i<4850) 
+				while (i<2850) 
   			</script>
 		</div>
 	</body>
