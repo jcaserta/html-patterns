@@ -1,0 +1,168 @@
+
+<html>
+
+	<head> 
+		<title>13</title>
+		<style>
+			body { margin: 0px; width: 1920px; padding:0; background: rgb(22, 70, 131);}
+
+
+			.layer1 { position: absolute; width: 1920px; top: 0; left: 0; z-index: 1;}
+			.layer2 { position: absolute; width: 1920px; top: 0; left: 0; z-index: 2;}
+			.none { display: none;}
+
+			.crop { width: 960px; height: 960px; margin: 0px; float: left;  
+				border: 1px solid white; position:absolute; top: 0; left:0; z-index: 2;
+				
+			 } 
+			.repeat { width: 960px; height: 960px; margin: 0px; float: left;  
+				border: 0;  overflow: hidden; 
+				-webkit-transform: rotate(90deg);
+			 } 
+			
+			.repeatcontainer { width: 1400px; height: 1400px; margin: 0px; 
+			 } 
+			.container { width: 121px; height: 96px; margin: 0px; float: left; margin-left: -91px;
+			 } 
+
+			.layer2 .container { width: 142px; height: 96px; margin: 0px; float: left; position: relative; left: -144px; top:-144px; margin-left: -116px;
+			 } 
+
+			.container div { 
+				width: 144px; height: 144px;
+				margin-left: -10px;
+				font-size: 0;
+				color: rgba(102,241,117,.9); 
+				-webkit-transform: rotate(119deg);
+			}
+			.container:nth-child(2n) div { 
+				font-size: 70px;
+			}
+			.container:nth-child(4n) div { 
+				font-size: 300px;
+			}
+			.layer2 .container div { 
+				width: 144px; height: 144px;
+				color: rgba(102,41,17,.4); 
+				border-radius: 50%;
+				margin-left: -10px;
+				font-size: 0;
+				-webkit-transform: rotate(119deg);
+			}
+			.layer2 .container:nth-child(2n) div { 
+				font-size: 172px;
+			}
+			.layer2 .container:nth-child(4n) div { 
+				font-size: 172px;
+			}
+		</style>
+	</head>
+	
+	<body> 
+<div class="layer1">
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div> > < </div></div>');
+					  i++;
+					  }
+					while (i<2450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div> > < </div></div>');
+					  i++;
+					  }
+					while (i<2450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div> > < </div></div>');
+					  i++;
+					  }
+					while (i<2450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div> > < </div></div>');
+					  i++;
+					  }
+					while (i<2450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="crop "></div>
+</div>
+
+<div class="layer2">
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div> < > </div></div>');
+					  i++;
+					  }
+					while (i<1450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div> < > </div></div>');
+					  i++;
+					  }
+					while (i<1450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div> < > </div></div>');
+					  i++;
+					  }
+					while (i<1450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div> < > </div></div>');
+					  i++;
+					  }
+					while (i<1450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="crop "></div>
+</div>
+
+	</body>
+
+</html>

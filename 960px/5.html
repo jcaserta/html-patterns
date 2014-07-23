@@ -1,0 +1,78 @@
+
+<html>
+
+	<head> 
+		<title>One</title>
+		<style>
+			body { margin: 0px; width: 1920px; padding:0; }
+
+			body>div {
+				overflow: hidden; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			.none { display: none;}
+
+			.crop { width: 960px; height: 960px; margin: 0px; float: left;  
+				border: 1px solid white; position:absolute; top: 0; left:0; z-index: 2;
+				
+			 } 
+			.repeat { width: 960px; height: 960px; margin: 0px; float: left;  
+				border: 0;  overflow: hidden; background: rgb(102,41,117); 
+				-webkit-transform: rotate(90deg);
+			 } 
+			 .repeat:nth-child(2n) { -webkit-transform: rotate(90deg);
+}
+			
+			.repeatcontainer, .repeatcontainer2 { position:absolute; width: 1200px; height: 1200px; margin: 0px; 
+			 } 
+			.container { width: 96px; height: 96px; margin: 0px; float: left; position: relative; left: -144px; top:-144px; margin-left: -61.75px;
+			 } 
+
+			.repeatcontainer2 .container div { 
+				width: 144px; height: 144px;
+				border: 50px solid transparent;
+				border-left: 50px solid rgba(55, 163, 0, .2); 
+			}
+			.repeatcontainer .container div { 
+				width: 14px; height: 144px;
+				margin-left: 0px;
+				border: 50px solid transparent;
+				border-left: 50px solid rgba(255, 163, 0, .5); 
+				border-right: 220px solid rgba(155, 63, 0, .5); 
+			}
+			.container:nth-child(2n) div { 
+			}
+		</style>
+	</head>
+	
+	<body> 
+
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<450) 
+	  			</script>
+			</div>
+			<div class="repeatcontainer2">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<450) 
+	  			</script>
+			</div>
+		</div>
+		<div class="crop none"></div>
+
+	</body>
+
+</html>

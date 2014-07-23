@@ -1,0 +1,63 @@
+
+<html>
+
+	<head> 
+		<title>One</title>
+		<style>
+			body { margin: 0px; width: 1920px; padding:0; }
+
+			body>div {
+				overflow: hidden; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			.none { display: none;}
+
+			.crop { width: 960px; height: 960px; margin: 0px; float: left;  
+				border: 1px solid white; position:absolute; top: 0; left:0; z-index: 2;
+				
+			 } 
+			.repeat { width: 100px; height: 100px; margin: 0px; float: left;  
+				border: 0;  overflow: hidden; 
+				-webkit-transform: rotate(90deg);
+			 } 
+			 .repeat:nth-child(2n) { -webkit-transform: rotate(90deg);
+}
+			
+			.repeatcontainer { width: 1200px; height: 1200px; margin: 0px; 
+			 } 
+			.container { width: 96px; height: 96px; margin: 0px; float: left; position: relative; left: -144px; top:-144px; margin-left: -61.75px;
+			 } 
+
+			.container div { 
+				width: 144px; height: 144px;
+				border-radius: 50%;
+				margin-left: -10px;
+				border: 50px solid transparent;
+				border-left: 50px solid rgb(0, 0, 0); opacity: 1;
+			}
+			.container:nth-child(2n) div { 
+				border-left: 50px solid rgb(255, 255, 255); opacity: 1;
+			}
+		</style>
+	</head>
+	
+	<body> 
+
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<450) 
+	  			</script>
+			</div>
+		</div>
+
+	</body>
+
+</html>
