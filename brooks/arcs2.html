@@ -1,0 +1,90 @@
+
+<html>
+
+	<head>
+		<title>8</title>
+		<style>
+			body { margin: 0px; width: 3840px; padding:0; }
+
+			body>div {
+				overflow: hidden; padding: 0;
+				float: left;
+				/*defaults for containers */
+			}
+
+			.none { display: none;}
+
+			.crop { width: 960px; height: 960px; margin: 0px; float: left;
+				border: 1px dotted rgba(255,255,255,.3); position:absolute; top: 0; left:0; z-index: 2;
+
+			 }
+			.repeat { width: 960px; height: 960px; margin: 0px; float: left;
+				border: 0;  overflow: hidden; background: rgb(102,41,117);
+			 }
+
+			.repeatcontainer { width: auto;  margin: 0px;
+			 }
+			 /* 48 x30 */
+
+			.repeatcontainer span {
+				float: left;  border: 1px solid white;
+				font-size: 99%;
+				width: auto;
+				-webkit-transform: rotate(0deg);
+				float: left;
+				/* 49x23  w/   22px dashed white*/
+
+			}
+			.container:nth-child(2n)  {
+				-webkit-transform: rotate(180deg);
+			}
+			.container:nth-child(3n)  {
+				background: rgb(0,41,117);
+			}
+			.container:nth-child(4n)  {
+			}
+			.container:nth-child(5n)  {
+			}
+			.container:nth-child(10n)  {
+			}
+			.container:nth-child(20n)  {
+			}
+			.container:nth-child(9n)  {
+			}
+			.container:nth-child(12n)  {
+			}
+			.container:nth-child(60n)  {
+			}
+			.container:nth-child(100n)  {
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="crop "></div>
+
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<span>A');
+					  i++;
+					  }
+					while (i<450)
+	  			</script>
+					<script>
+						i=0;
+						do {
+						  document.write('</span>');
+						  i++;
+						  }
+						while (i<450)
+		  			</script>
+
+			</div>
+		</div>
+		<div class="repeat"
+	</body>
+
+</html>

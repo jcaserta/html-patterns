@@ -1,0 +1,57 @@
+
+<html>
+
+	<head> 
+		<title>Template</title>
+		<style>
+			body { margin: 0pc; padding:0; background: black;}
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: hidden; margin-bottom: ; padding: 0;
+				float: left; 
+				/*defaults for containers */
+			}
+
+			body>div div:nth-child(3n) { 
+				margin-left: -3pt;
+				-webkit-transform: rotate(7deg);
+ 			}
+			body>div div:nth-child(2n) { 
+				margin-left: -38pt;
+				-webkit-transform: rotate(65deg);
+ 			}
+			body>div div:nth-child(4n) { 
+				margin-left: 3pt;
+				-webkit-transform: rotate(14deg);
+ 			}
+			.container { width: 144pc; height: auto; border: 0;  overflow: hidden;  } /* 13.5 inches */
+
+			body div  { 
+				font-size: 38pt;
+				font-family: "Times";
+				margin-top: -37pt;
+				float: left;
+				color: white; 
+				width: 44pt;
+				height: 59pt;
+			}
+			
+		</style>
+	</head>
+	
+	<body> 
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div>*</div>");
+				  i++;
+				  }
+				while (i<11000) 
+  			</script>
+		</div>
+	</body>
+
+		<!-- a comment in html -->
+</html>

@@ -1,0 +1,49 @@
+
+<html>
+
+	<head>
+		<title>Skews</title>
+		<style>
+			html { -webkit-transform: scale(2.3); position: absolute; left: 15in; top: 50in;}
+
+			body { margin: 0pc; padding:0; }
+			/* Overflow, rgba, float/position, classes, recursive */
+
+			body>div {
+				overflow: visible; margin: 6pc ; padding: 0;
+				float: left;
+				/*defaults for containers */
+			}
+
+			body>div div:nth-child(5n) {
+				margin-left: -18pt;
+ 			}
+			.container { width: 36in;  border: 0;  overflow: visible;  } /* 13.5 inches */
+
+			.container div  {
+				width: 72pt; height: 72pt;
+				border: 13pt solid red;
+				margin-top: -50pt;
+				float: left;
+				-webkit-transform: rotate(45deg);
+				-webkit-perspective: 72pt; /* Chrome, Safari, Opera */
+				perspective: 72pt;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<script>
+				i=0;
+				do {
+				  document.write("<div></div>");
+				  i++;
+				  }
+				while (i<2854)
+  			</script>
+		</div>
+	</body>
+		<!-- a comment in html -->
+</html>
