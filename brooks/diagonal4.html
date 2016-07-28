@@ -1,0 +1,586 @@
+
+<html>
+
+	<head>
+		<title>11</title>
+		<style>
+			body { margin: 0px; width: 1920px; padding:0; background: rgb(245, 242, 255); overflow: hidden;
+ }
+
+			body>div {
+				overflow: hidden; padding: 0;
+				float: left;
+				/*defaults for containers */
+			}
+
+			.none { display: none;}
+
+			.crop { width: 960px; height: 960px; margin: 0px; float: left;
+				border: 0 dotted rgba(255,255,255,.3); position:absolute; top: 0; left:0; z-index: 2;
+
+			 }
+			.repeat { width: 720px; height: 720px; margin: 0px; float: left;
+				border: 0;  overflow: hidden; background: none;
+			 }
+
+			.repeatcontainer { width: 1400px; height: 1400px;
+			 }
+			 .layer2 .repeatcontainer { margin-left: -1px; margin-top: -2px; width: 1400px; height: 1400px;
+ 			 }
+
+			.container { width: 36px; height: 36px; margin: 0px; float: left; margin-left: 0px;
+		 }
+
+			.layer1 .container div {
+ 				width: 100%; height: 100%;
+				border: 1px solid yellow;
+				border-bottom: 2px solid green;
+ 				margin: -0;  /* -26px */
+ 				-webkit-transform: rotate(45deg);
+ 			}
+			.container:nth-child(2n) div {
+			 border-top: 2px solid blue;
+		 }
+			.container:nth-child(3n) div {
+			 border-top: 2px solid blue;
+		 }
+			.container:nth-child(4n) div {
+			 border-left: 2px solid blue;
+			 border-top: 2px solid yellow;
+			 border-bottom: 2px solid transparent;
+	 }
+		 .container:nth-child(5n) div {
+			-webkit-transform: rotate(0);
+			border-top: 2px solid magenta;
+			border-left: 2px solid transparent;
+		}
+		.container:nth-child(6n) div {
+		 -webkit-transform: rotate(0);
+		 border-bottom: 2px solid yellow;
+		 border-right: 2px solid transparent;
+	 }
+	 .container:nth-child(10n) div {
+		border-bottom: 2px solid blue;
+	}
+ .container:nth-child(12n) div {
+	 border-right: 2px solid transparent;
+}
+.container:nth-child(15n) div {
+ -webkit-transform: rotate(180deg);
+ border-bottom: 2px solid transparent;
+ border-left: 2px solid yellow;
+}
+
+.layer2 .container div {
+ width: 100%; height: 100%;
+ border: 2px solid magenta;
+ border-bottom: 2px solid transparent;
+ margin: -0;  /* -26px */
+ -webkit-transform: rotate(45deg);
+}
+.layer2 .container:nth-child(2n) div {
+ border-top: 2px solid transparent;
+}
+.layer2 .container:nth-child(3n) div {
+ border-top: 2px solid transparent;
+}
+.layer2 .container:nth-child(4n) div {
+ border-left: 2px solid transparent;
+ border-top: 2px solid transparent;
+ border-bottom: 2px solid transparent;
+}
+.layer2 .container:nth-child(5n) div {
+-webkit-transform: rotate(0);
+border-top: 2px solid transparent;
+border-left: 2px solid transparent;
+}
+.layer2 .container:nth-child(6n) div {
+-webkit-transform: rotate(0);
+border-bottom: 2px solid transparent;
+border-right: 2px solid transparent;
+}
+.layer2 .container:nth-child(10n) div {
+border-bottom: 2px solid transparent;
+}
+.layer2 .container:nth-child(12n) div {
+border-right: 2px solid transparent;
+}
+.layer2 .container:nth-child(15n) div {
+-webkit-transform: rotate(180deg);
+border-bottom: 2px solid transparent;
+border-left: 2px solid transparent;
+}
+
+			.layer1 { position: absolute; top: -0; left: 0; z-index: 1; width: 150%;}
+			.layer2 {  position: absolute;  z-index: -2; width: 150%; }
+		</style>
+	</head>
+
+	<body>
+		<div class="layer1">
+
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<1000)
+		  			</script>
+				</div>
+			</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+					  document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<1000)
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+						document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<1000)
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+						document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<1000)
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+						document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<1000)
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+						document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<1000)
+	  			</script>
+			</div>
+		</div>
+		<div class="repeat">
+			<div class="repeatcontainer">
+				<script>
+					i=0;
+					do {
+						document.write('<div class="container"><div></div></div>');
+					  i++;
+					  }
+					while (i<1000)
+	  			</script>
+			</div>
+		</div>
+</div>
+<div class="layer2">
+
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+	<div class="repeat">
+		<div class="repeatcontainer">
+			<script>
+				i=0;
+				do {
+					document.write('<div class="container"><div></div></div>');
+					i++;
+					}
+				while (i<1000)
+				</script>
+		</div>
+	</div>
+<div class="repeat">
+	<div class="repeatcontainer">
+		<script>
+			i=0;
+			do {
+				document.write('<div class="container"><div></div></div>');
+				i++;
+				}
+			while (i<1000)
+			</script>
+	</div>
+</div>
+<div class="repeat">
+	<div class="repeatcontainer">
+		<script>
+			i=0;
+			do {
+				document.write('<div class="container"><div></div></div>');
+				i++;
+				}
+			while (i<1000)
+			</script>
+	</div>
+</div>
+<div class="repeat">
+	<div class="repeatcontainer">
+		<script>
+			i=0;
+			do {
+				document.write('<div class="container"><div></div></div>');
+				i++;
+				}
+			while (i<1000)
+			</script>
+	</div>
+</div>
+<div class="repeat">
+	<div class="repeatcontainer">
+		<script>
+			i=0;
+			do {
+				document.write('<div class="container"><div></div></div>');
+				i++;
+				}
+			while (i<1000)
+			</script>
+	</div>
+</div>
+<div class="repeat">
+	<div class="repeatcontainer">
+		<script>
+			i=0;
+			do {
+				document.write('<div class="container"><div></div></div>');
+				i++;
+				}
+			while (i<1000)
+			</script>
+	</div>
+</div>
+<div class="repeat">
+	<div class="repeatcontainer">
+		<script>
+			i=0;
+			do {
+				document.write('<div class="container"><div></div></div>');
+				i++;
+				}
+			while (i<1000)
+			</script>
+	</div>
+</div>
+</div>
+
+
+	</body>
+
+</html>
