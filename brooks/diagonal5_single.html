@@ -1,0 +1,96 @@
+
+<html>
+
+	<head>
+		<title>Diagonal5 - Single</title>
+		<style>
+			body { margin: 0; padding:0; background: rgb(245, 242, 255); overflow: hidden; width: 150%;}
+
+			body>div {
+				overflow: hidden; padding: 0;
+				float: left;
+				/*defaults for containers */
+			}
+
+			.none { display: none;}
+
+			.repeat { width: 720px; height: 720px; margin: 0; float: left; overflow: hidden; background: none; border: 0;
+			 }
+
+			.repeatcontainer { width: 1400px; height: 1400px; overflow: hidden;
+			 }
+
+			.container { width: 36px; height: 36px; margin: 0px; float: left; margin-left: 0px;
+		 }
+
+			 .container div {
+ 				width: 100%; height: 100%;
+				border: 2px solid red;
+				border-bottom: 2px solid green;
+ 				margin: -0;  /* -26px */
+ 				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+			.container:nth-child(2n) div {
+			 border-top: 2px solid blue;
+		 }
+			.container:nth-child(3n) div {
+			 border-top: 2px solid blue;
+		 }
+			.container:nth-child(4n) div {
+			 border-left: 2px solid blue;
+			 border-top: 2px solid yellow;
+			 border-bottom: 2px solid transparent;
+	 }
+		 .container:nth-child(5n) div {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+			border-top: 2px solid blue;
+			border-left: 2px solid transparent;
+		}
+		.container:nth-child(6n) div {
+		 -webkit-transform: rotate(0);
+		 transform: rotate(0);
+		 border-bottom: 2px solid yellow;
+		 border-right: 2px solid transparent;
+	 }
+	 .container:nth-child(10n) div {
+		border-bottom: 2px solid green;
+	}
+ .container:nth-child(12n) div {
+	 border-right: 2px solid transparent;
+}
+.container:nth-child(15n) div {
+ -webkit-transform: rotate(180deg);
+ transform: rotate(180deg);
+ border-bottom: 2px solid transparent;
+ border-left: 2px solid yellow;
+}
+.container:nth-child(20n) div {
+ border-bottom: 2px solid blue;
+}
+
+
+
+		</style>
+	</head>
+
+	<body>
+
+			<div class="repeat">
+				<div class="repeatcontainer">
+					<script>
+						i=0;
+						do {
+						  document.write('<div class="container"><div></div></div>');
+						  i++;
+						  }
+						while (i<800)
+		  			</script>
+				</div>
+			</div>
+
+
+	</body>
+
+</html>
