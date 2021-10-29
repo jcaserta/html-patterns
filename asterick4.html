@@ -1,54 +1,42 @@
 
 <html>
 
-	<head> 
+	<head>
 		<title>Template</title>
 		<style>
-			body { margin: 0pc; padding:0; background: black;}
+			body { margin: 0pc; padding:0; background: white;}
 			/* Overflow, rgba, float/position, classes, recursive */
 
 			body>div {
 				overflow: hidden; margin-bottom: ; padding: 0;
-				float: left; 
+				float: left;
 				/*defaults for containers */
 			}
 
-			body>div div:nth-child(3n) { 
-				margin-left: -3pt;
-				-webkit-transform: rotate(7deg);
- 			}
-			body>div div:nth-child(2n) { 
-				margin-left: -38pt;
-				-webkit-transform: rotate(65deg);
- 			}
-			body>div div:nth-child(4n) { 
-				margin-left: 3pt;
-				-webkit-transform: rotate(14deg);
- 			}
-			.container { width: 144pc; height: auto; border: 0;  overflow: hidden;  } /* 13.5 inches */
+			.container { width: auto; height: auto; border: 0;  overflow: hidden;  } /* 13.5 inches */
 
-			body div  { 
-				font-size: 38pt;
-				font-family: "Times";
-				margin-top: -37pt;
+			body div  {
+				font-size: 4pt;
+				font-family: "SimplonBPMono-Regular";
+				margin-top: -0;
 				float: left;
-				color: white; 
-				width: 44pt;
-				height: 59pt;
+				width: auto;
+				height: auto;
+				padding-right:.35em;
 			}
-			
+
 		</style>
 	</head>
-	
-	<body> 
+
+	<body>
 		<div class="container">
 			<script>
 				i=0;
 				do {
-				  document.write("<div>*</div>");
+				  document.write("<div>"+i+"</div>");
 				  i++;
 				  }
-				while (i<11000) 
+				while (i<4000001)
   			</script>
 		</div>
 	</body>
